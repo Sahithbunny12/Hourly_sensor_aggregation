@@ -1,0 +1,14 @@
+# Open HBase shell
+docker exec -it hbase-sensor hbase shell
+
+# Count all rows
+count 'sensor_data'
+
+# Scan all 24 hourly aggregates
+scan 'sensor_data', {STARTROW => 'AEP_Hour_', STOPROW => 'AEP_Hour_~', LIMIT => 24}
+
+# Get one specific hour
+get 'sensor_data', 'AEP_Hour_08'
+
+# Get peak hour example
+get 'sensor_data', 'AEP_Hour_18'
