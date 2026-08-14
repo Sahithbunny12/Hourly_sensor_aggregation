@@ -1,4 +1,3 @@
-# Hourly_sensor_aggregation
 # Hourly Sensor Aggregation
 
 A Big Data Analytics project that processes hourly electricity consumption data, calculates average power consumption for each hour of the day, and stores the aggregated results in **Apache HBase** and **MongoDB**.
